@@ -5,8 +5,8 @@ public class Creature extends Card implements Cadastro{
     private String  stats;
 
     @Override
-    public void register(String cardType) {
-        super.cardType=cardType;
+    public void register() {
+        super.cardType="Creature";
         System.out.println("Input this card converted mana cost: ");
         super.manaCost=Integer.parseInt(sc.nextLine());
         System.out.println("Input this card name: ");
@@ -33,4 +33,5 @@ public class Creature extends Card implements Cadastro{
                 ", stats='" + stats + '\'' +
                 '}';
     }
+
 }
